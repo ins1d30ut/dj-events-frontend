@@ -1,9 +1,10 @@
-import React from 'react';
-
+import Layout from '../../components/Layout';
 export default function EventPage() {
   return (
-    <div>
+    <Layout>
       <h1>Event</h1>
-    </div>
+      <h3>{router.query.slug}</h3>
+      <button onClick={() => router.push('/')}>Click</button>
+    </Layout>
   );
 }
